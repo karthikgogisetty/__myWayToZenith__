@@ -30,5 +30,8 @@ npm run build
 - Framer Motion
 - Lucide React Icons
 
+## Design Reference
+- [Original Design on Replit](https://replit.com/@karthikgogisett/Portfolio-Hub)
+
 ## Reference
 - [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
