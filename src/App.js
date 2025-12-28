@@ -161,7 +161,7 @@ export default function App() {
             <div className="inline-block px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-sm font-mono mb-6">
               Hello, I'm
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500 leading-none">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500 leading-tight pb-2">
               {profile.name}
             </h1>
             <h2 className="text-xl md:text-2xl text-zinc-400 mb-6 font-light">
