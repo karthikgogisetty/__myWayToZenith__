@@ -146,6 +146,7 @@ export default function App() {
 
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex flex-col justify-center relative px-6 pt-20">
+      <div id="about" className="scroll-mt-20">
         {/* Background Gradients */}
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-purple-500/5 rounded-full blur-3xl" />
@@ -160,7 +161,7 @@ export default function App() {
             <div className="inline-block px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-sm font-mono mb-6">
               Hello, I'm
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500 leading-none">
               {profile.name}
             </h1>
             <h2 className="text-xl md:text-2xl text-zinc-400 mb-6 font-light">
@@ -206,6 +207,7 @@ export default function App() {
             </div>
           </motion.div>
         </div>
+      </div>
       </section>
 
       {/* Experience Section */}
