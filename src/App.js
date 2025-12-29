@@ -146,7 +146,7 @@ export default function App() {
 
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex flex-col justify-center relative px-6 pt-20">
-      <div id="about" className="scroll-mt-20">
+      <div id="about" className="scroll-mt-24">
         {/* Background Gradients */}
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-purple-500/5 rounded-full blur-3xl" />
@@ -211,7 +211,7 @@ export default function App() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-24 px-6 bg-zinc-900/30">
+      <section id="experience" className="py-24 px-6 bg-zinc-900/30 scroll-mt-24">
         <div className="container max-w-5xl mx-auto">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -269,7 +269,7 @@ export default function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-24 px-6">
+      <section id="projects" className="py-24 px-6 scroll-mt-24">
         <div className="max-w-5xl mx-auto">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -386,7 +386,7 @@ export default function App() {
       </section>
 
       {/* Writing Section */}
-      <section id="writing" className="py-24 px-6">
+      <section id="writing" className="py-24 px-6 scroll-mt-24">
         <div className="container max-w-5xl mx-auto">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
