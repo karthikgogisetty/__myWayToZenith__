@@ -106,8 +106,15 @@ export default function App() {
   const articles = [
     {
       id: 1,
-      title: "Superposition Is Just for Quantum Physics?",
-      summary: "Coming soon - First article exploring the intersection of quantum concepts and machine learning.",
+      title: "Schrödinger's Cat Lives Inside Your Neural Network",
+      summary: "A deep dive into superposition - exploring how quantum concepts manifest in neural networks and machine learning models.",
+      link: "https://medium.com/@karthikgogisetty/schrödingers-cat-lives-inside-your-neural-network-a-deep-dive-into-superposition-f5a5ce164c7f",
+      publishedDate: "2024-12-30"
+    },
+    {
+      id: 2,
+      title: "Geometry of Superposition inside a Neural Network",
+      summary: "Coming soon - Second article exploring the geometry of contents & concepts of first article in a more mathematically rigorous way.",
       link: "#",
       publishedDate: null
     }
