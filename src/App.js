@@ -126,20 +126,23 @@ export default function App() {
     <div className="min-h-screen bg-background text-foreground selection:bg-zinc-800 selection:text-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-lg z-50 border-b border-border">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <img 
-              src="https://github.com/karthikgogisetty.png" 
-              alt="KG"
-              className="w-8 h-8 rounded-full object-cover border border-zinc-700 grayscale"
-            />
-            <span className="font-bold text-lg bg-gradient-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent">KG</span>
-          </div>
-          <div className="flex gap-6">
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
-            <a href="#experience" className="text-muted-foreground hover:text-foreground transition-colors">Experience</a>
-            <a href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</a>
-            <a href="#writing" className="text-muted-foreground hover:text-foreground transition-colors">Writing</a>
+        <div className="max-w-6xl mx-auto px-4 py-3 md:px-6 md:py-4">
+          {/* Mobile Layout */}
+          <div className="flex flex-col md:flex-row justify-between items-center gap-2">
+            <div className="flex items-center gap-2">
+              <img 
+                src="https://github.com/karthikgogisetty.png" 
+                alt="KG"
+                className="w-6 h-6 md:w-8 md:h-8 rounded-full object-cover border border-zinc-700 grayscale"
+              />
+              <span className="font-bold text-base md:text-lg bg-gradient-to-r from-zinc-400 to-zinc-600 bg-clip-text text-transparent">KG</span>
+            </div>
+            <div className="flex gap-3 md:gap-6 text-sm md:text-base">
+              <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
+              <a href="#experience" className="text-muted-foreground hover:text-foreground transition-colors">Experience</a>
+              <a href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</a>
+              <a href="#writing" className="text-muted-foreground hover:text-foreground transition-colors">Writing</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -151,27 +154,45 @@ export default function App() {
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-purple-500/5 rounded-full blur-3xl" />
 
-        <div className="container max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className="container max-w-5xl mx-auto flex flex-col items-center text-center md:text-left space-y-8 md:space-y-0">
+          {/* Profile Picture - Always on top */}
           <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="order-2 md:order-1"
+            className="flex justify-center"
+          >
+            <div className="relative w-48 h-48 md:w-64 md:h-64">
+              <div className="absolute inset-0 bg-gradient-to-tr from-zinc-800 to-zinc-900 rounded-full blur-2xl opacity-50 animate-pulse"></div>
+              <img 
+                src={`${profile.githubUrl}.png`} 
+                alt={profile.name}
+                className="relative w-full h-full object-cover rounded-full border-4 border-zinc-900 shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+          </motion.div>
+
+          {/* Text Content */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="max-w-2xl mx-auto md:mx-0"
           >
             <div className="inline-block px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-sm font-mono mb-6">
               Hello, I'm
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500 leading-tight pb-2">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500 leading-tight pb-2">
               {profile.name}
             </h1>
-            <h2 className="text-xl md:text-2xl text-zinc-400 mb-6 font-light">
+            <h2 className="text-lg md:text-xl text-zinc-400 mb-6 font-light">
               {profile.title}
             </h2>
-            <p className="text-zinc-500 text-lg max-w-lg mb-8 leading-relaxed">
+            <p className="text-zinc-500 text-base md:text-lg max-w-lg mb-8 leading-relaxed">
               {profile.summary}
             </p>
 
-            <div className="flex flex-wrap gap-4 relative z-10">
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start relative z-10">
               <a href={profile.githubUrl} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all cursor-pointer">
                 <Github size={20} />
               </a>
@@ -188,22 +209,6 @@ export default function App() {
               >
                 <Mail size={20} />
               </a>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="order-1 md:order-2 flex justify-center md:justify-end"
-          >
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
-              <div className="absolute inset-0 bg-gradient-to-tr from-zinc-800 to-zinc-900 rounded-full blur-2xl opacity-50 animate-pulse"></div>
-              <img 
-                src={`${profile.githubUrl}.png`} 
-                alt={profile.name}
-                className="relative w-full h-full object-cover rounded-full border-4 border-zinc-900 shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
-              />
             </div>
           </motion.div>
         </div>
