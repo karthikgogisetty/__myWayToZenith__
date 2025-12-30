@@ -483,8 +483,11 @@ export default function App() {
 
           <div className="grid grid-cols-1 gap-4">
             {articles.map((article, idx) => (
-              <motion.div
+              <motion.a
                 key={article.id}
+                href={article.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -503,7 +506,7 @@ export default function App() {
                   </span>
                   <ExternalLink className="text-zinc-600 group-hover:text-primary transition-colors" size={20} />
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </div>
