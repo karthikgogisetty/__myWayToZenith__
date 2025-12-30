@@ -154,63 +154,126 @@ export default function App() {
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-purple-500/5 rounded-full blur-3xl" />
 
-        <div className="container max-w-5xl mx-auto flex flex-col items-center text-center md:text-left space-y-8 md:space-y-0">
-          {/* Profile Picture - Always on top */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            className="flex justify-center"
-          >
-            <div className="relative w-48 h-48 md:w-64 md:h-64">
-              <div className="absolute inset-0 bg-gradient-to-tr from-zinc-800 to-zinc-900 rounded-full blur-2xl opacity-50 animate-pulse"></div>
-              <img 
-                src={`${profile.githubUrl}.png`} 
-                alt={profile.name}
-                className="relative w-full h-full object-cover rounded-full border-4 border-zinc-900 shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
-              />
-            </div>
-          </motion.div>
+        <div className="container max-w-5xl mx-auto">
+          {/* Mobile Layout - Stacked */}
+          <div className="flex flex-col items-center text-center space-y-8 md:hidden">
+            {/* Profile Picture */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="flex justify-center"
+            >
+              <div className="relative w-48 h-48">
+                <div className="absolute inset-0 bg-gradient-to-tr from-zinc-800 to-zinc-900 rounded-full blur-2xl opacity-50 animate-pulse"></div>
+                <img 
+                  src={`${profile.githubUrl}.png`} 
+                  alt={profile.name}
+                  className="relative w-full h-full object-cover rounded-full border-4 border-zinc-900 shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
+                />
+              </div>
+            </motion.div>
 
-          {/* Text Content */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="max-w-2xl mx-auto md:mx-0"
-          >
-            <div className="inline-block px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-sm font-mono mb-6">
-              Hello, I'm
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500 leading-tight pb-2">
-              {profile.name}
-            </h1>
-            <h2 className="text-lg md:text-xl text-zinc-400 mb-6 font-light">
-              {profile.title}
-            </h2>
-            <p className="text-zinc-500 text-base md:text-lg max-w-lg mb-8 leading-relaxed">
-              {profile.summary}
-            </p>
+            {/* Text Content */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="max-w-2xl mx-auto"
+            >
+              <div className="inline-block px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-sm font-mono mb-6">
+                Hello, I'm
+              </div>
+              <h1 className="text-4xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500 leading-tight pb-2">
+                {profile.name}
+              </h1>
+              <h2 className="text-lg text-zinc-400 mb-6 font-light">
+                {profile.title}
+              </h2>
+              <p className="text-zinc-500 text-base max-w-lg mb-8 leading-relaxed">
+                {profile.summary}
+              </p>
 
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start relative z-10">
-              <a href={profile.githubUrl} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all cursor-pointer">
-                <Github size={20} />
-              </a>
-              <a href={profile.linkedinUrl} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all cursor-pointer">
-                <Linkedin size={20} />
-              </a>
-              <a 
-                href="mailto:karthikgogisetty@gmail.com?subject=Hello%20from%20Portfolio" 
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = 'mailto:karthikgogisetty@gmail.com?subject=Hello%20from%20Portfolio';
-                }}
-                className="p-3 rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all cursor-pointer"
-              >
-                <Mail size={20} />
-              </a>
-            </div>
-          </motion.div>
+              <div className="flex flex-wrap gap-4 justify-center relative z-10">
+                <a href={profile.githubUrl} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all cursor-pointer">
+                  <Github size={20} />
+                </a>
+                <a href={profile.linkedinUrl} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all cursor-pointer">
+                  <Linkedin size={20} />
+                </a>
+                <a 
+                  href="mailto:karthikgogisetty@gmail.com?subject=Hello%20from%20Portfolio" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = 'mailto:karthikgogisetty@gmail.com?subject=Hello%20from%20Portfolio';
+                  }}
+                  className="p-3 rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all cursor-pointer"
+                >
+                  <Mail size={20} />
+                </a>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Desktop Layout - Side by Side */}
+          <div className="hidden md:grid grid-cols-2 gap-12 items-center">
+            {/* Text Content - Left */}
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="order-1"
+            >
+              <div className="inline-block px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-sm font-mono mb-6">
+                Hello, I'm
+              </div>
+              <h1 className="text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500 leading-tight pb-2">
+                {profile.name}
+              </h1>
+              <h2 className="text-xl text-zinc-400 mb-6 font-light">
+                {profile.title}
+              </h2>
+              <p className="text-zinc-500 text-lg max-w-lg mb-8 leading-relaxed">
+                {profile.summary}
+              </p>
+
+              <div className="flex flex-wrap gap-4 relative z-10">
+                <a href={profile.githubUrl} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all cursor-pointer">
+                  <Github size={20} />
+                </a>
+                <a href={profile.linkedinUrl} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all cursor-pointer">
+                  <Linkedin size={20} />
+                </a>
+                <a 
+                  href="mailto:karthikgogisetty@gmail.com?subject=Hello%20from%20Portfolio" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = 'mailto:karthikgogisetty@gmail.com?subject=Hello%20from%20Portfolio';
+                  }}
+                  className="p-3 rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-all cursor-pointer"
+                >
+                  <Mail size={20} />
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Profile Picture - Right */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="order-2 flex justify-end"
+            >
+              <div className="relative w-80 h-80">
+                <div className="absolute inset-0 bg-gradient-to-tr from-zinc-800 to-zinc-900 rounded-full blur-2xl opacity-50 animate-pulse"></div>
+                <img 
+                  src={`${profile.githubUrl}.png`} 
+                  alt={profile.name}
+                  className="relative w-full h-full object-cover rounded-full border-4 border-zinc-900 shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
+                />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
       </section>
