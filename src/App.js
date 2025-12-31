@@ -471,7 +471,7 @@ export default function App() {
             className="mb-12"
           >
             <h2 className="text-3xl font-bold tracking-tight mb-4">Writing</h2>
-            <p className="text-muted-foreground max-w-2xl">Coming soon - Thoughts on technology, AI, and software engineering.</p>
+            <p className="text-muted-foreground max-w-2xl">Thoughts on technology, AI, and software engineering.</p>
             <motion.div 
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
