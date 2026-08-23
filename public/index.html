@@ -4,16 +4,66 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#7c3aed" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121110" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf8f4" />
+
+    <title>Karthik Gogisetty | Senior ML Engineer</title>
     <meta
       name="description"
-      content="Karthik Gogisetty - Senior Machine Learning Engineer specializing in AI/ML, Computer Vision, NLP, and MLOps"
+      content="Senior Machine Learning Engineer shipping production AI — fraud detection, document forensics, computer vision and LLM agents at scale."
     />
-    <meta name="keywords" content="Machine Learning, AI, ML Engineer, Computer Vision, NLP, Python, MLOps, Karthik Gogisetty" />
+    <meta
+      name="keywords"
+      content="Machine Learning, AI, ML Engineer, Computer Vision, NLP, LLM, Python, MLOps, Karthik Gogisetty"
+    />
     <meta name="author" content="Karthik Gogisetty" />
+
+    <!-- Link previews: what people see when this gets shared -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Karthik Gogisetty — Selected Work" />
+    <meta
+      property="og:description"
+      content="Selected work: fraud detection, document forensics and multilingual extraction, built at IDfy."
+    />
+    <meta property="og:image" content="https://github.com/karthikgogisetty.png" />
+    <meta property="og:image:alt" content="Karthik Gogisetty" />
+    <meta property="profile:first_name" content="Karthik" />
+    <meta property="profile:last_name" content="Gogisetty" />
+    <meta property="profile:username" content="karthikgogisetty" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Karthik Gogisetty — Selected Work" />
+    <meta
+      name="twitter:description"
+      content="Selected work: fraud detection, document forensics and multilingual extraction, built at IDfy."
+    />
+    <meta name="twitter:image" content="https://github.com/karthikgogisetty.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Karthik Gogisetty | Senior ML Engineer</title>
+
+    <script>
+      // Apply the stored theme before first paint so there is no flash of
+      // the wrong palette. Kept in sync with src/hooks/useTheme.js.
+      (function () {
+        try {
+          var stored = localStorage.getItem('kg-theme');
+          var theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light';
+          if (theme === 'dark') document.documentElement.classList.add('dark');
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {
+          document.documentElement.style.colorScheme = 'light';
+        }
+      })();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
