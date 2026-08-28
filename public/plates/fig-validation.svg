@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<rect width="1200" height="900" fill="#f4f1ea"/>
+<g stroke="#c9c2b4" stroke-width="1" opacity="0.5">
+  <line x1="0" y1="0" x2="0" y2="900"/><line x1="100" y1="0" x2="100" y2="900"/><line x1="200" y1="0" x2="200" y2="900"/><line x1="300" y1="0" x2="300" y2="900"/><line x1="400" y1="0" x2="400" y2="900"/><line x1="500" y1="0" x2="500" y2="900"/><line x1="600" y1="0" x2="600" y2="900"/><line x1="700" y1="0" x2="700" y2="900"/><line x1="800" y1="0" x2="800" y2="900"/><line x1="900" y1="0" x2="900" y2="900"/><line x1="1000" y1="0" x2="1000" y2="900"/><line x1="1100" y1="0" x2="1100" y2="900"/><line x1="1200" y1="0" x2="1200" y2="900"/>
+  <line x1="0" y1="0" x2="1200" y2="0"/><line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/><line x1="0" y1="500" x2="1200" y2="500"/><line x1="0" y1="600" x2="1200" y2="600"/><line x1="0" y1="700" x2="1200" y2="700"/><line x1="0" y1="800" x2="1200" y2="800"/><line x1="0" y1="900" x2="1200" y2="900"/>
+</g>
+<text x="60" y="80" font-family="monospace" font-size="22" letter-spacing="4" fill="#8a8378">FIG. IV</text>
+<text x="1140" y="80" font-family="monospace" font-size="22" letter-spacing="4" fill="#8a8378" text-anchor="end">DOCUMENT VALIDATION</text>
+<line x1="60" y1="100" x2="1140" y2="100" stroke="#231f1c" stroke-width="2"/>
+<rect x="120" y="200" width="420" height="300" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/>
+<rect x="150" y="240" width="120" height="140" fill="none" stroke="#b3401f" stroke-width="3"/>
+<text x="150" y="230" font-family="monospace" font-size="16" fill="#b3401f">PHOTO 0.97</text>
+<rect x="300" y="250" width="210" height="60" fill="none" stroke="#b3401f" stroke-width="3"/>
+<text x="300" y="240" font-family="monospace" font-size="16" fill="#b3401f">TYPE v3 0.94</text>
+<rect x="300" y="340" width="180" height="40" fill="none" stroke="#b3401f" stroke-width="3"/>
+
+<line x1="540" y1="350" x2="660" y2="350" stroke="#231f1c" stroke-width="2" />
+<polygon points="660,350 648,344 648,356" fill="#231f1c" transform="rotate(0 660 350)"/>
+
+<rect x="660" y="280" width="220" height="140" fill="#f4f1ea" stroke="#b3401f" stroke-width="3"/>
+<text x="770" y="342" font-family="monospace" font-size="24" fill="#231f1c" text-anchor="middle" dominant-baseline="middle">YOLOv8</text>
+<text x="770" y="374" font-family="monospace" font-size="17" fill="#8a8378" text-anchor="middle" dominant-baseline="middle">type + version</text>
+
+<line x1="770" y1="420" x2="770" y2="540" stroke="#231f1c" stroke-width="2" stroke-dasharray="7 6"/>
+<polygon points="770,540 758,534 758,546" fill="#231f1c" transform="rotate(90 770 540)"/>
+
+<rect x="660" y="540" width="220" height="120" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/>
+<text x="770" y="592" font-family="monospace" font-size="24" fill="#231f1c" text-anchor="middle" dominant-baseline="middle">LLM</text>
+<text x="770" y="624" font-family="monospace" font-size="17" fill="#8a8378" text-anchor="middle" dominant-baseline="middle">fallback</text>
+
+<line x1="880" y1="350" x2="1000" y2="350" stroke="#231f1c" stroke-width="2" />
+<polygon points="1000,350 988,344 988,356" fill="#231f1c" transform="rotate(0 1000 350)"/>
+
+<rect x="1000" y="290" width="140" height="120" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/>
+<text x="1070" y="350" font-family="monospace" font-size="24" fill="#231f1c" text-anchor="middle" dominant-baseline="middle">PASS</text>
+
+<text x="60" y="830" font-family="monospace" font-size="18" fill="#8a8378">PLATE IV — CLASSIFIER-FIRST, LLM FALLBACK FOR UNKNOWN TYPES</text></svg>

@@ -26,8 +26,10 @@ export const cover = {
   title: 'Production AI for identity verification',
   standfirst:
     'Fraud detection, document forensics and multilingual extraction — six systems built at IDfy and put in front of real traffic.',
-  image: null,
-  alt: '',
+  image: '/plates/fig-lead.svg',
+  alt: 'System overview: documents and merchant images flow through validation, extraction and classification into fraud analysis and a decision',
+  w: 2100,
+  h: 900,
 };
 
 export const cases = [
@@ -48,8 +50,10 @@ export const cases = [
       ['Stack', 'Computer Vision, Classification'],
       ['Result', '90% accuracy · 100K+ images / month'],
     ],
-    image: null,
-    alt: '',
+    image: '/plates/fig-shop-ai.svg',
+    alt: 'Schematic figure',
+    w: 1200,
+    h: 900,
   },
   {
     id: 'forgery-detection',
@@ -68,8 +72,10 @@ export const cases = [
       ['Stack', 'Deep Learning, Computer Vision'],
       ['Result', '95% precision · 90% recall'],
     ],
-    image: null,
-    alt: '',
+    image: '/plates/fig-forgery.svg',
+    alt: 'Schematic figure',
+    w: 1200,
+    h: 900,
   },
   {
     id: 'document-ocr',
@@ -88,8 +94,10 @@ export const cases = [
       ['Stack', 'NLP, OCR, Information Extraction'],
       ['Result', '+15% accuracy · −8s latency'],
     ],
-    image: null,
-    alt: '',
+    image: '/plates/fig-ocr.svg',
+    alt: 'Schematic figure',
+    w: 1200,
+    h: 900,
   },
   {
     id: 'document-validation',
@@ -108,8 +116,10 @@ export const cases = [
       ['Stack', 'YOLOv8, LLMs'],
       ['Result', 'Type and version detection with fallback'],
     ],
-    image: null,
-    alt: '',
+    image: '/plates/fig-validation.svg',
+    alt: 'Schematic figure',
+    w: 1200,
+    h: 900,
   },
   {
     id: 'dsl-generator',
@@ -128,8 +138,10 @@ export const cases = [
       ['Stack', 'LLM, Python, Automation'],
       ['Result', '70% less configuration time'],
     ],
-    image: null,
-    alt: '',
+    image: '/plates/fig-dsl.svg',
+    alt: 'Schematic figure',
+    w: 1200,
+    h: 900,
   },
   {
     id: 'melanoma',
@@ -147,8 +159,10 @@ export const cases = [
       ['Stack', 'PyTorch, Computer Vision'],
       ['Result', '3,000+ images, augmented'],
     ],
-    image: null,
-    alt: '',
+    image: '/plates/fig-melanoma.svg',
+    alt: 'Schematic figure',
+    w: 1200,
+    h: 900,
   },
 ];
 

@@ -32,8 +32,10 @@ export default function CaseStudy({ entry, index }) {
             <Plate
               src={entry.image}
               alt={entry.alt}
+              width={entry.w}
+              height={entry.h}
               numeral={entry.numeral}
-              spec="Photograph · 4:3"
+              spec="Figure · 4:3"
               caption={`${entry.numeral} — ${entry.title}`}
               ratio="aspect-[4/3]"
             />

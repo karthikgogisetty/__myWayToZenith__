@@ -54,8 +54,10 @@ export default function Cover() {
       <Plate
         src={cover.image}
         alt={cover.alt}
-        spec="Lead photograph · 21:9"
-        caption="Cover"
+        width={cover.w}
+        height={cover.h}
+        spec="Lead figure · 21:9"
+        caption="Cover — the six systems as one pipeline"
         ratio="aspect-[2/1] md:aspect-[21/9]"
         priority
         className="mt-12 md:mt-16"

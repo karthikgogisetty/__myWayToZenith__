@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<rect width="1200" height="900" fill="#f4f1ea"/>
+<g stroke="#c9c2b4" stroke-width="1" opacity="0.5">
+  <line x1="0" y1="0" x2="0" y2="900"/><line x1="100" y1="0" x2="100" y2="900"/><line x1="200" y1="0" x2="200" y2="900"/><line x1="300" y1="0" x2="300" y2="900"/><line x1="400" y1="0" x2="400" y2="900"/><line x1="500" y1="0" x2="500" y2="900"/><line x1="600" y1="0" x2="600" y2="900"/><line x1="700" y1="0" x2="700" y2="900"/><line x1="800" y1="0" x2="800" y2="900"/><line x1="900" y1="0" x2="900" y2="900"/><line x1="1000" y1="0" x2="1000" y2="900"/><line x1="1100" y1="0" x2="1100" y2="900"/><line x1="1200" y1="0" x2="1200" y2="900"/>
+  <line x1="0" y1="0" x2="1200" y2="0"/><line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/><line x1="0" y1="500" x2="1200" y2="500"/><line x1="0" y1="600" x2="1200" y2="600"/><line x1="0" y1="700" x2="1200" y2="700"/><line x1="0" y1="800" x2="1200" y2="800"/><line x1="0" y1="900" x2="1200" y2="900"/>
+</g>
+<text x="60" y="80" font-family="monospace" font-size="22" letter-spacing="4" fill="#8a8378">FIG. III</text>
+<text x="1140" y="80" font-family="monospace" font-size="22" letter-spacing="4" fill="#8a8378" text-anchor="end">MULTILINGUAL EXTRACTION</text>
+<line x1="60" y1="100" x2="1140" y2="100" stroke="#231f1c" stroke-width="2"/>
+<rect x="110" y="200" width="360" height="480" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/>
+<text x="140" y="270" font-family="monospace" font-size="26" fill="#231f1c">ชื่อ / NAMA / 姓名</text>
+<line x1="140" y1="320" x2="430" y2="320" stroke="#c9c2b4" stroke-width="7"/><line x1="140" y1="376" x2="430" y2="376" stroke="#c9c2b4" stroke-width="7"/><line x1="140" y1="432" x2="430" y2="432" stroke="#c9c2b4" stroke-width="7"/><line x1="140" y1="488" x2="430" y2="488" stroke="#c9c2b4" stroke-width="7"/><line x1="140" y1="544" x2="430" y2="544" stroke="#c9c2b4" stroke-width="7"/><line x1="140" y1="600" x2="430" y2="600" stroke="#c9c2b4" stroke-width="7"/>
+
+<line x1="470" y1="440" x2="590" y2="440" stroke="#231f1c" stroke-width="2" />
+<polygon points="590,440 578,434 578,446" fill="#231f1c" transform="rotate(0 590 440)"/>
+
+<rect x="590" y="360" width="230" height="160" fill="#f4f1ea" stroke="#b3401f" stroke-width="3"/>
+<text x="705" y="432" font-family="monospace" font-size="24" fill="#231f1c" text-anchor="middle" dominant-baseline="middle">EXTRACT</text>
+<text x="705" y="464" font-family="monospace" font-size="17" fill="#8a8378" text-anchor="middle" dominant-baseline="middle">OCR + NLP</text>
+
+<line x1="820" y1="440" x2="920" y2="440" stroke="#231f1c" stroke-width="2" />
+<polygon points="920,440 908,434 908,446" fill="#231f1c" transform="rotate(0 920 440)"/>
+
+  <rect x="920" y="240" width="210" height="80" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/>
+  <text x="940" y="273" font-family="monospace" font-size="17" fill="#8a8378">NAME</text>
+  <line x1="940" y1="295" x2="1100" y2="295" stroke="#b3401f" stroke-width="4"/>
+  <rect x="920" y="350" width="210" height="80" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/>
+  <text x="940" y="383" font-family="monospace" font-size="17" fill="#8a8378">ID NO.</text>
+  <line x1="940" y1="405" x2="1100" y2="405" stroke="#b3401f" stroke-width="4"/>
+  <rect x="920" y="460" width="210" height="80" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/>
+  <text x="940" y="493" font-family="monospace" font-size="17" fill="#8a8378">ADDRESS</text>
+  <line x1="940" y1="515" x2="1100" y2="515" stroke="#b3401f" stroke-width="4"/>
+  <rect x="920" y="570" width="210" height="80" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/>
+  <text x="940" y="603" font-family="monospace" font-size="17" fill="#8a8378">ISSUED</text>
+  <line x1="940" y1="625" x2="1100" y2="625" stroke="#b3401f" stroke-width="4"/>
+<text x="705" y="580" font-family="monospace" font-size="20" fill="#b3401f" text-anchor="middle">−8s LATENCY</text>
+<text x="60" y="830" font-family="monospace" font-size="18" fill="#8a8378">PLATE III — SOUTHEAST ASIAN DOCUMENT FIELD EXTRACTION</text></svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500">
+<rect width="1200" height="1500" fill="#f4f1ea"/>
+<g stroke="#c9c2b4" stroke-width="1" opacity="0.5">
+ <line x1="0" y1="0" x2="0" y2="1500"/><line x1="100" y1="0" x2="100" y2="1500"/><line x1="200" y1="0" x2="200" y2="1500"/><line x1="300" y1="0" x2="300" y2="1500"/><line x1="400" y1="0" x2="400" y2="1500"/><line x1="500" y1="0" x2="500" y2="1500"/><line x1="600" y1="0" x2="600" y2="1500"/><line x1="700" y1="0" x2="700" y2="1500"/><line x1="800" y1="0" x2="800" y2="1500"/><line x1="900" y1="0" x2="900" y2="1500"/><line x1="1000" y1="0" x2="1000" y2="1500"/><line x1="1100" y1="0" x2="1100" y2="1500"/><line x1="1200" y1="0" x2="1200" y2="1500"/>
+ <line x1="0" y1="0" x2="1200" y2="0"/><line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/><line x1="0" y1="500" x2="1200" y2="500"/><line x1="0" y1="600" x2="1200" y2="600"/><line x1="0" y1="700" x2="1200" y2="700"/><line x1="0" y1="800" x2="1200" y2="800"/><line x1="0" y1="900" x2="1200" y2="900"/><line x1="0" y1="1000" x2="1200" y2="1000"/><line x1="0" y1="1100" x2="1200" y2="1100"/><line x1="0" y1="1200" x2="1200" y2="1200"/><line x1="0" y1="1300" x2="1200" y2="1300"/><line x1="0" y1="1400" x2="1200" y2="1400"/><line x1="0" y1="1500" x2="1200" y2="1500"/>
+</g>
+<text x="70" y="100" font-family="monospace" font-size="30" letter-spacing="6" fill="#8a8378">CRICKET</text>
+<line x1="70" y1="130" x2="1130" y2="130" stroke="#231f1c" stroke-width="3"/>
+
+<g stroke="#231f1c" stroke-width="8" stroke-linecap="round">
+ <line x1="430" y1="620" x2="430" y2="1150"/><line x1="530" y1="620" x2="530" y2="1150"/><line x1="630" y1="620" x2="630" y2="1150"/>
+ <line x1="432" y1="600" x2="522" y2="600"/><line x1="538" y1="600" x2="628" y2="600"/>
+</g>
+<line x1="250" y1="1150" x2="820" y2="1150" stroke="#231f1c" stroke-width="5"/>
+<g transform="rotate(-24 850 900)">
+ <rect x="810" y="580" width="86" height="440" rx="34" fill="#f4f1ea" stroke="#231f1c" stroke-width="7"/>
+ <rect x="836" y="440" width="34" height="150" rx="16" fill="#f4f1ea" stroke="#231f1c" stroke-width="7"/>
+</g>
+<circle cx="300" cy="420" r="80" fill="#b3401f"/>
+<path d="M244 365 q56 55 0 110 M356 365 q-56 55 0 110" stroke="#f4f1ea" stroke-width="6" fill="none"/>
+<text x="70" y="1380" font-family="monospace" font-size="26" fill="#8a8378">FIG. — WILLOW, LEATHER, 22 YARDS</text>
+</svg>

@@ -37,12 +37,21 @@ export default function Plate({
   caption,
   spec,
   ratio = 'aspect-[3/2]',
+  width,
+  height,
   className = '',
   priority = false,
 }) {
+  // Real dimensions win over the placeholder ratio, so a photograph is shown
+  // whole rather than cropped into a frame that was guessed before it existed.
+  const natural = width && height ? { aspectRatio: `${width} / ${height}` } : undefined;
+
   return (
     <figure className={`relative ${className}`}>
-      <div className={`relative w-full overflow-hidden ${ratio} rule-t rule-b`}>
+      <div
+        className={`relative w-full overflow-hidden ${natural ? '' : ratio} rule-t rule-b`}
+        style={natural}
+      >
         {src ? (
           <img
             src={src}

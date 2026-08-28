@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<rect width="1200" height="900" fill="#f4f1ea"/>
+<g stroke="#c9c2b4" stroke-width="1" opacity="0.5">
+  <line x1="0" y1="0" x2="0" y2="900"/><line x1="100" y1="0" x2="100" y2="900"/><line x1="200" y1="0" x2="200" y2="900"/><line x1="300" y1="0" x2="300" y2="900"/><line x1="400" y1="0" x2="400" y2="900"/><line x1="500" y1="0" x2="500" y2="900"/><line x1="600" y1="0" x2="600" y2="900"/><line x1="700" y1="0" x2="700" y2="900"/><line x1="800" y1="0" x2="800" y2="900"/><line x1="900" y1="0" x2="900" y2="900"/><line x1="1000" y1="0" x2="1000" y2="900"/><line x1="1100" y1="0" x2="1100" y2="900"/><line x1="1200" y1="0" x2="1200" y2="900"/>
+  <line x1="0" y1="0" x2="1200" y2="0"/><line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/><line x1="0" y1="500" x2="1200" y2="500"/><line x1="0" y1="600" x2="1200" y2="600"/><line x1="0" y1="700" x2="1200" y2="700"/><line x1="0" y1="800" x2="1200" y2="800"/><line x1="0" y1="900" x2="1200" y2="900"/>
+</g>
+<text x="60" y="80" font-family="monospace" font-size="22" letter-spacing="4" fill="#8a8378">FIG. II</text>
+<text x="1140" y="80" font-family="monospace" font-size="22" letter-spacing="4" fill="#8a8378" text-anchor="end">TAMPER DETECTION</text>
+<line x1="60" y1="100" x2="1140" y2="100" stroke="#231f1c" stroke-width="2"/>
+<rect x="140" y="180" width="400" height="540" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/>
+<line x1="180" y1="260" x2="500" y2="260" stroke="#c9c2b4" stroke-width="6"/><line x1="180" y1="308" x2="500" y2="308" stroke="#c9c2b4" stroke-width="6"/><line x1="180" y1="356" x2="500" y2="356" stroke="#c9c2b4" stroke-width="6"/><line x1="180" y1="404" x2="500" y2="404" stroke="#c9c2b4" stroke-width="6"/><line x1="180" y1="452" x2="500" y2="452" stroke="#c9c2b4" stroke-width="6"/><line x1="180" y1="500" x2="500" y2="500" stroke="#c9c2b4" stroke-width="6"/><line x1="180" y1="548" x2="500" y2="548" stroke="#c9c2b4" stroke-width="6"/><line x1="180" y1="596" x2="500" y2="596" stroke="#c9c2b4" stroke-width="6"/><line x1="180" y1="644" x2="500" y2="644" stroke="#c9c2b4" stroke-width="6"/>
+<rect x="180" y="380" width="150" height="60" fill="none" stroke="#b3401f" stroke-width="3" stroke-dasharray="8 5"/>
+<rect x="300" y="560" width="180" height="46" fill="none" stroke="#b3401f" stroke-width="3" stroke-dasharray="8 5"/>
+<circle cx="620" cy="420" r="90" fill="none" stroke="#231f1c" stroke-width="3"/>
+<line x1="683" y1="483" x2="760" y2="560" stroke="#231f1c" stroke-width="8"/>
+
+<line x1="760" y1="420" x2="860" y2="420" stroke="#231f1c" stroke-width="2" />
+<polygon points="860,420 848,414 848,426" fill="#231f1c" transform="rotate(0 860 420)"/>
+
+<rect x="860" y="290" width="260" height="120" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/>
+<text x="990" y="342" font-family="monospace" font-size="24" fill="#231f1c" text-anchor="middle" dominant-baseline="middle">AUTHENTIC</text>
+<text x="990" y="374" font-family="monospace" font-size="17" fill="#8a8378" text-anchor="middle" dominant-baseline="middle">95% precision</text>
+
+<rect x="860" y="470" width="260" height="120" fill="#f4f1ea" stroke="#b3401f" stroke-width="3"/>
+<text x="990" y="522" font-family="monospace" font-size="24" fill="#231f1c" text-anchor="middle" dominant-baseline="middle">TAMPERED</text>
+<text x="990" y="554" font-family="monospace" font-size="17" fill="#8a8378" text-anchor="middle" dominant-baseline="middle">90% recall</text>
+<text x="60" y="830" font-family="monospace" font-size="18" fill="#8a8378">PLATE II — REGION-LEVEL FORGERY ANALYSIS, IDENTITY PIPELINE</text></svg>

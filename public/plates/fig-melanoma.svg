@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<rect width="1200" height="900" fill="#f4f1ea"/>
+<g stroke="#c9c2b4" stroke-width="1" opacity="0.5">
+  <line x1="0" y1="0" x2="0" y2="900"/><line x1="100" y1="0" x2="100" y2="900"/><line x1="200" y1="0" x2="200" y2="900"/><line x1="300" y1="0" x2="300" y2="900"/><line x1="400" y1="0" x2="400" y2="900"/><line x1="500" y1="0" x2="500" y2="900"/><line x1="600" y1="0" x2="600" y2="900"/><line x1="700" y1="0" x2="700" y2="900"/><line x1="800" y1="0" x2="800" y2="900"/><line x1="900" y1="0" x2="900" y2="900"/><line x1="1000" y1="0" x2="1000" y2="900"/><line x1="1100" y1="0" x2="1100" y2="900"/><line x1="1200" y1="0" x2="1200" y2="900"/>
+  <line x1="0" y1="0" x2="1200" y2="0"/><line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/><line x1="0" y1="500" x2="1200" y2="500"/><line x1="0" y1="600" x2="1200" y2="600"/><line x1="0" y1="700" x2="1200" y2="700"/><line x1="0" y1="800" x2="1200" y2="800"/><line x1="0" y1="900" x2="1200" y2="900"/>
+</g>
+<text x="60" y="80" font-family="monospace" font-size="22" letter-spacing="4" fill="#8a8378">FIG. VI</text>
+<text x="1140" y="80" font-family="monospace" font-size="22" letter-spacing="4" fill="#8a8378" text-anchor="end">MELANOMA CLASSIFICATION</text>
+<line x1="60" y1="100" x2="1140" y2="100" stroke="#231f1c" stroke-width="2"/>
+<circle cx="220" cy="400" r="110" fill="none" stroke="#231f1c" stroke-width="2"/>
+<path d="M175 380 q20 -35 55 -28 q40 6 48 38 q6 30 -18 48 q-30 22 -60 8 q-32 -16 -25 -66 Z" fill="#8a8378" opacity="0.55"/>
+<text x="220" y="560" font-family="monospace" font-size="17" fill="#8a8378" text-anchor="middle">DERMATOSCOPIC INPUT</text>
+
+<line x1="340" y1="400" x2="440" y2="400" stroke="#231f1c" stroke-width="2" />
+<polygon points="440,400 428,394 428,406" fill="#231f1c" transform="rotate(0 440 400)"/>
+<rect x="450" y="310" width="150" height="150" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/><rect x="468" y="296" width="150" height="150" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/><rect x="486" y="282" width="150" height="150" fill="#f4f1ea" stroke="#231f1c" stroke-width="2"/>
+<text x="540" y="560" font-family="monospace" font-size="17" fill="#8a8378" text-anchor="middle">AUGMENTATION ×N</text>
+
+<line x1="660" y1="400" x2="760" y2="400" stroke="#231f1c" stroke-width="2" />
+<polygon points="760,400 748,394 748,406" fill="#231f1c" transform="rotate(0 760 400)"/>
+
+<rect x="760" y="320" width="220" height="160" fill="#f4f1ea" stroke="#b3401f" stroke-width="3"/>
+<text x="870" y="392" font-family="monospace" font-size="24" fill="#231f1c" text-anchor="middle" dominant-baseline="middle">CNN</text>
+<text x="870" y="424" font-family="monospace" font-size="17" fill="#8a8378" text-anchor="middle" dominant-baseline="middle">PyTorch</text>
+
+<line x1="980" y1="400" x2="1060" y2="400" stroke="#231f1c" stroke-width="2" />
+<polygon points="1060,400 1048,394 1048,406" fill="#231f1c" transform="rotate(0 1060 400)"/>
+<text x="1075" y="380" font-family="monospace" font-size="22" fill="#231f1c">BENIGN</text>
+<text x="1075" y="430" font-family="monospace" font-size="22" fill="#b3401f">MALIGNANT</text>
+<text x="60" y="830" font-family="monospace" font-size="18" fill="#8a8378">PLATE VI — 3,000+ IMAGES, HEAVY AUGMENTATION</text></svg>
