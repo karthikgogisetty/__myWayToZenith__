@@ -32,6 +32,7 @@ function CropMarks() {
 
 export default function Plate({
   src,
+  inline = null,
   alt = '',
   numeral,
   caption,
@@ -52,7 +53,9 @@ export default function Plate({
         className={`relative w-full overflow-hidden ${natural ? '' : ratio} rule-t rule-b`}
         style={natural}
       >
-        {src ? (
+        {inline ? (
+          <div className="absolute inset-0">{inline}</div>
+        ) : src ? (
           <img
             src={src}
             alt={alt}
@@ -81,7 +84,7 @@ export default function Plate({
 
       {caption && (
         <figcaption className="label mt-3 flex items-baseline gap-3">
-          <span className="text-accent">{src ? 'Fig.' : 'Plate'}</span>
+          <span className="text-accent">{src || inline ? 'Fig.' : 'Plate'}</span>
           <span>{caption}</span>
         </figcaption>
       )}

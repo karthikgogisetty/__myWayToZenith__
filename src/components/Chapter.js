@@ -1,17 +1,22 @@
 import React from 'react';
 import Plate from './Plate';
 import Reveal from './Reveal';
+import SPORT_PLATES from './SportPlates';
 import TravelMap from './TravelMap';
 import TK, { hasText } from './TK';
 
 /** Photographs in a grid. */
 function GridLayout({ chapter }) {
+  // Four items sit as one row on desktop; other counts flow in threes.
+  const cols =
+    chapter.items.length % 4 === 0 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-2 lg:grid-cols-3';
   return (
-    <div className="mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+    <div className={`mt-10 grid gap-x-6 gap-y-10 ${cols}`}>
       {chapter.items.map((item, i) => (
         <Reveal key={`${chapter.id}-${i}`} delay={(i % 3) * 0.05}>
           <Plate
             src={item.image}
+            inline={item.plate ? React.createElement(SPORT_PLATES[item.plate]) : null}
             alt={item.alt}
             width={item.w}
             height={item.h}
