@@ -1,6 +1,6 @@
 {
-  "short_name": "Karthik G",
-  "name": "Karthik Gogisetty — Senior ML Engineer",
+  "short_name": "Karthik",
+  "name": "Karthik Gogisetty",
   "description": "Production AI: fraud detection, document forensics, computer vision and LLM agents at scale.",
   "icons": [
     {
@@ -21,6 +21,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#0a0a0b",
-  "background_color": "#0a0a0b"
+  "theme_color": "#141210",
+  "background_color": "#f4f1ea"
 }
